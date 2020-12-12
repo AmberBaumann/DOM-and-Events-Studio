@@ -30,11 +30,19 @@ window.addEventListener('load', function () {
     landingBtn.addEventListener('click', function () {
         const response = window.confirm('The shuttle is landing. Landing gear engaged.');
         if (response) {
-            status.innerText = "The shutle has landed.";
+            status.innerText = "The shuttle has landed.";
             shuttleHeight.innerText = "0";
             shuttleBackground.style.backgroundColor = "green";
         }
     });
 
+    missionAbortBtn.addEventListener('click', function () {
+        const response = window.confirm('Confirm that you want to abort the mission.');
+        if (response) {
+            status.innerText = "Mission aborted.";
+            shuttleHeight.innerText = "0";
+            shuttleBackground.style.backgroundColor = "green";
+        }
+    });
 
 })
