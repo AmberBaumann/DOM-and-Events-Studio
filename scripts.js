@@ -45,4 +45,20 @@ window.addEventListener('load', function () {
         }
     });
 
+    rightBtn.addEventListener('click', function () {
+        console.log("right button clicked");
+    });
+
+    leftBtn.addEventListener('click', function () {
+        console.log('left button clicked');
+    });
+
+    upBtn.addEventListener('click', function () {
+        console.log('up button clicked');
+    });
+
+    downBtn.addEventListener('click', function () {
+        console.log('down button clicked');
+    });
+
 })
