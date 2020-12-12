@@ -25,5 +25,16 @@ window.addEventListener('load', function () {
             shuttleHeight.innerText = "10000";
             shuttleBackground.style.backgroundColor = "blue";
         }
-    })
+    });
+
+    landingBtn.addEventListener('click', function () {
+        const response = window.confirm('The shuttle is landing. Landing gear engaged.');
+        if (response) {
+            status.innerText = "The shutle has landed.";
+            shuttleHeight.innerText = "0";
+            shuttleBackground.style.backgroundColor = "green";
+        }
+    });
+
+
 })
